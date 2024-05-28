@@ -1,0 +1,9 @@
+altgraph==0.17.4
+packaging==24.0
+prompt_toolkit==3.0.44
+pyinstaller==6.7.0
+pyinstaller-hooks-contrib==2024.6
+pytube==15.0.0
+setuptools==70.0.0
+tqdm==4.66.4
+wcwidth==0.2.13
