@@ -3,10 +3,10 @@
 # Function to check for script updates
 check_updates() {
     # Fetch the latest version information from GitHub API
-    latest_version=$(curl -s https://api.github.com/repos/yourusername/youtube_downloader/releases/latest | grep tag_name | cut -d '"' -f 4)
+    latest_version=$(curl -s https://api.github.com/repos/VedantBhawsar/youtube_playlist_downloader_script/releases/latest | grep tag_name | cut -d '"' -f 4)
     
     # Compare the latest version with the current version
-    if [ "$latest_version" != "v1.0" ]; then
+    if [ "$latest_version" != "v1.0.0" ]; then
         echo "A new version of the script is available. Please update."
         exit 1
     fi
@@ -98,8 +98,8 @@ download_videos() {
 
 # Main script execution starts here
 
-# Check for script updates (optional)
-# check_updates
+# Check for script updates
+check_updates
 
 # Set up logging
 setup_logging
